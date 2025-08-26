@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  width: 30%;
+  height: 50vh;
+  margin: 10% auto;
+  background-color: red;
+  border-radius: 10px;
+  overflow: hidden;
+  color: hsl(228, 12%, 48%);
+}
+
+.card-details {
+  padding: 1rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.tag {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+}
+
+h1 {
+  font-family: "Fraunces", sans-serif;
+  line-height: 1;
+  margin-bottom: 1rem;
+  color: hsl(158, 42%, 18%);
+}
+
+p {
+  font-size: 0.6rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.price {
+  display: block;
+}
+
+.price-main {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  font-family: "Fraunces", sans-serif;
+  color: hsl(158, 42%, 18%);
+  font-weight: 700;
+}
+
+.price-discount {
+  text-decoration: line-through;
+  font-size: 0.7rem;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background-color: hsl(158, 42%, 18%);
+  color: hsl(0, 0%, 100%);
+}
