@@ -9,16 +9,18 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-img {
+/* img {
   height: 100%;
+} */
+img.image--mobile {
+  display: none;
 }
-
 .card {
   display: flex;
   width: 30%;
   height: 50vh;
   margin: 10% auto;
-  background-color: red;
+  /* background-color: red; */
   border-radius: 10px;
   overflow: hidden;
   color: hsl(228, 12%, 48%);
@@ -85,4 +87,30 @@ button {
   border-radius: 10px;
   background-color: hsl(158, 42%, 18%);
   color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 480px) {
+  img.image--mobile {
+    display: flex;
+  }
+  img.image--desktop {
+    display: none;
+  }
+  .card {
+    flex-direction: column;
+    width: 80%;
+    max-width: 350px; /* prevent it from being too wide */
+    margin: 1rem auto;
+    height: auto;
+  }
+  /* img {
+    height: 20%;
+  } */
+
+  p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
 }
